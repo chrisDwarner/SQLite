@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		839EBD2318C14D9D00595A9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839EBD2218C14D9D00595A9E /* Foundation.framework */; };
-		839EBD2818C14D9D00595A9E /* SqLite3.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 839EBD2718C14D9D00595A9E /* SqLite3.h */; };
-		839EBD2A18C14D9D00595A9E /* SqLite3.m in Sources */ = {isa = PBXBuildFile; fileRef = 839EBD2918C14D9D00595A9E /* SqLite3.m */; };
 		839EBD3118C14D9D00595A9E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839EBD3018C14D9D00595A9E /* XCTest.framework */; };
 		839EBD3218C14D9D00595A9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839EBD2218C14D9D00595A9E /* Foundation.framework */; };
 		839EBD3418C14D9D00595A9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839EBD3318C14D9D00595A9E /* UIKit.framework */; };
@@ -35,7 +33,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				839EBD2818C14D9D00595A9E /* SqLite3.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +42,6 @@
 		839EBD1F18C14D9D00595A9E /* libSqLite3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSqLite3.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		839EBD2218C14D9D00595A9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		839EBD2618C14D9D00595A9E /* SqLite3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SqLite3-Prefix.pch"; sourceTree = "<group>"; };
-		839EBD2718C14D9D00595A9E /* SqLite3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqLite3.h; sourceTree = "<group>"; };
-		839EBD2918C14D9D00595A9E /* SqLite3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqLite3.m; sourceTree = "<group>"; };
 		839EBD2F18C14D9D00595A9E /* SqLite3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqLite3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839EBD3018C14D9D00595A9E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		839EBD3318C14D9D00595A9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,8 +105,6 @@
 		839EBD2418C14D9D00595A9E /* SqLite3 */ = {
 			isa = PBXGroup;
 			children = (
-				839EBD2718C14D9D00595A9E /* SqLite3.h */,
-				839EBD2918C14D9D00595A9E /* SqLite3.m */,
 				839EBD2518C14D9D00595A9E /* Supporting Files */,
 			);
 			path = SqLite3;
@@ -224,7 +217,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839EBD2A18C14D9D00595A9E /* SqLite3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
