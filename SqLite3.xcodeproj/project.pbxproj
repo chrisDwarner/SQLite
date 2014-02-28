@@ -14,6 +14,8 @@
 		839EBD3718C14D9D00595A9E /* libSqLite3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 839EBD1F18C14D9D00595A9E /* libSqLite3.a */; };
 		839EBD3D18C14D9D00595A9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 839EBD3B18C14D9D00595A9E /* InfoPlist.strings */; };
 		839EBD3F18C14D9D00595A9E /* SqLite3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839EBD3E18C14D9D00595A9E /* SqLite3Tests.m */; };
+		839EBD4C18C1526F00595A9E /* shell.c in Sources */ = {isa = PBXBuildFile; fileRef = 839EBD4818C1526F00595A9E /* shell.c */; };
+		839EBD4D18C1526F00595A9E /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 839EBD4918C1526F00595A9E /* sqlite3.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		839EBD3A18C14D9D00595A9E /* SqLite3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SqLite3Tests-Info.plist"; sourceTree = "<group>"; };
 		839EBD3C18C14D9D00595A9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		839EBD3E18C14D9D00595A9E /* SqLite3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqLite3Tests.m; sourceTree = "<group>"; };
+		839EBD4818C1526F00595A9E /* shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shell.c; sourceTree = "<group>"; };
+		839EBD4918C1526F00595A9E /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		839EBD4A18C1526F00595A9E /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		839EBD4B18C1526F00595A9E /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,10 @@
 		839EBD1618C14D9D00595A9E = {
 			isa = PBXGroup;
 			children = (
+				839EBD4818C1526F00595A9E /* shell.c */,
+				839EBD4918C1526F00595A9E /* sqlite3.c */,
+				839EBD4A18C1526F00595A9E /* sqlite3.h */,
+				839EBD4B18C1526F00595A9E /* sqlite3ext.h */,
 				839EBD2418C14D9D00595A9E /* SqLite3 */,
 				839EBD3818C14D9D00595A9E /* SqLite3Tests */,
 				839EBD2118C14D9D00595A9E /* Frameworks */,
@@ -217,6 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839EBD4C18C1526F00595A9E /* shell.c in Sources */,
+				839EBD4D18C1526F00595A9E /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +296,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = SQLITE_ENABLE_FTS4;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -315,6 +328,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = SQLITE_ENABLE_FTS4;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
